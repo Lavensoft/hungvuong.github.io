@@ -1,0 +1,44 @@
+<!--Copyright (c) 2019 Lavensoft, LEADER QUANG NHAT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/fonts.css"/>
+    <link rel="stylesheet" href="./css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/func.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Hẹn Hò</title>
+    <script>
+        localStorage.setItem("page","home");
+    </script>
+</head>
+<body id="content">
+    <!--NAVIGATION BAR-->   
+    <div class="nav-bar nav-toggle" id="nav-bar">
+        <script>appendNav();</script>
+    </div>
+    <!--WEB PARALLAX WALLPAPER-->
+    <div class="parallax-container" style="height:100%;">
+        <div class="parallax-text">
+           <div class="parallax-text-container">
+            <h1>Coming Soon...</h1>
+            <div class="prl-border"></div>
+           </div>
+        </div>
+        <div class="parallax"><img style="filter: blur(60px)" src= "./resources/image/cyberpop-zoe-league-of-legends-z4.jpg"/></div>
+      </div>
+        <!--SCRIPTS-->
+        <script>
+                $(document).ready(function(){
+                    $("#dating i").addClass("active");
+                    $("#dating").addClass("active");
+                });
+            </script>
+    </body>
+</html>

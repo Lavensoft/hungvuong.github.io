@@ -1,0 +1,567 @@
+/*COPYRIGHT (c) 2019 Lavensoft, Inc. LEADER QUANG NHATS*/
+
+/*DEFINE*/
+:root{
+    --shadow-0: 0 1px 4px 0 rgba(0,0,0,0.37);
+    --shadow-1:0 6px 14px 0 rgba(0, 0, 0, 0.22);
+
+    /*COLOR*/
+    --color-50: #ede7f6;
+    --color-100: #d1c4e9;
+    --color-200: #b39ddb;
+    --color-300: #9575cd;
+    --color-400: #7e57c2;
+    --color-500: #673ab7;
+    --color-600: #5e35b1;
+    --color-700: #512da8;
+    --color-800: #4527a0;
+    --color-900: #311b92;
+    --color-A100: #b388ff;
+    --color-A200: #7c4dff;
+    --color-A400: #651fff;
+    --color-A700: #6200ea;
+}
+
+.bg-header{
+    background: url(http://localhost/resources/image/bg-header.svg) no-repeat;
+    background-position: top left;
+    height: 85%;
+    top: -59px;
+}
+
+.landing-logo {
+    background: url('../resources/image/landingLogo.svg') no-repeat;
+    background-position: bottom left;
+    height: 116px;
+    padding-top: 375px;
+    margin-left: 219px;
+}
+
+.landing-image {
+    float: right;
+}
+
+/*INPUT*/
+input[type="text"]:focus{
+    border-bottom:1px solid #b48d7e;
+    -webkit-box-shadow:0 1px 0 0 #b48d7e;box-shadow:0 1px 0 #b48d7e}
+
+/*BUTTON*/
+.btn{
+    background-color:#8d6e63;
+    border-radius:7px;
+}
+
+.btn:hover{
+    background-color: #8d6e63;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: #233745;
+}
+
+/*FORM*/
+.confess-form{
+    width:640px;
+    height:450px;
+    margin:auto;
+    background-color:#fff;
+    box-shadow: var(--shadow-0);
+    border-radius:7px;
+    padding:24px;
+    padding-left:32px;
+    padding-right:28px;
+    text-align:left;
+}   
+
+.confess-form h4{
+    font-weight:500;
+    margin-bottom:24px;
+}
+
+.confess-form a{
+    color:var(--black);
+    font-size:20px;
+    font-weight:500;
+    padding-top:24px;
+}
+
+.confess-form .confess-hastag .confess-hastag-icon{
+    width:48px;
+    float:left;
+    text-align:center;
+}
+
+.confess-form .confess-hastag .confess-hastag-icon a{
+    font-size:48px;
+    font-weight:600;
+    color:#a1887f;
+}
+
+.confess-form .confess-hastag .confess-hastag-input{
+    width:508px;
+    margin-left:24px;
+    border:none;
+    float:left;
+    margin-top:15px;
+    font-size:24px;
+    color:#a1887f;
+    font-weight:500;
+}
+
+.confess-form input{
+}
+
+.confess-form button{
+    margin-top:32px;
+    float:right;
+    background-color: #795548;
+}
+
+.confess-form-success{
+    height:200px;
+    text-align:center;
+}
+
+.confess-form-success h4{
+    line-height:55px;
+}
+
+/*SCROLL BAR*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color: #6e574e;
+}
+
+/*NAVBAR*/
+.nav-bar{
+    width:100%;
+    height:56px;
+    padding-left:32px;
+    padding-right:32px;
+    padding-top:3px;
+    position:fixed;
+    z-index:9999;
+    color:#fff;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    display:flex;
+    flex-direction:row;
+}
+
+.nav-toggle{
+    background-color:#fff;
+    color:rgba(206,169,100,1);
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav-bar .nav-header{
+    line-height:1;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing: 1.5px;
+    flex:1;
+}
+
+.nav-bar .left-menu{
+    float:left;
+    width:301px;
+    height:100%;
+    flex:1;
+}
+
+.center-menu{
+    width:300px;
+    height:100%;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-menu{
+    width:52px;
+    height:52px;
+    margin:auto;
+}
+
+.center-menu .nav-menu .nav-icon{
+    line-height:48px;
+    color:#61676f;
+    font-size:28px;
+    cursor:pointer;
+}
+
+i.material-icons.nav-icon.active{
+    color:rgba(206,169,100,1);
+}
+
+.nav-menu.active{
+    border-bottom:2px solid rgba(206,169,100,1);
+}
+
+.nav-bar .right-menu{
+    float:right;
+    width: 250px;
+    height:100%;
+    flex:1;
+}
+
+
+
+
+.nav-bar .right-menu .search-box{
+    width:250px;
+    height:calc( 100% - 16px);
+    background-color:#f2f4f5;
+    margin-top:6px;
+    border-radius:25px;
+    float:right;
+    /*border:1px solid #ececec;*/
+}
+
+.nav-bar .right-menu .search-box .search-icon{
+    color:#6d7176;
+    width:36px;
+    height:36px;
+    padding: 7px;
+    padding-left:10px;
+    float:left;
+}
+
+.nav-bar .right-menu .search-box input{
+    background:transparent;
+    border:none;
+    width:200px;
+    height:37px;
+    padding-bottom:7px;
+    padding-left:10px;
+    color:#6d7176;
+    font-weight:400;
+    font-size:15px;
+}
+
+.nav-bar .right-menu .search-box input::placeholder{
+    color:#b3b8be;
+}
+
+input:not([type]):focus:not([readonly]){
+    border:none;
+}
+
+input:not([type]):focus:not([readonly]){
+    border:none;
+    box-shadow:none;
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+    height:64px;
+    text-align:center;
+    line-height:64px;
+    background-color:#233745;
+    color:#fff;
+    font-weight:500;
+}
+
+/*CARD*/
+.admin-profile{
+    height: 400px;
+    text-align:center;
+    margin:auto;
+    max-width:800px;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.admin-card{
+    width: 234px;
+    height: 369px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.22);
+    background-color: #fff;
+    flex:1;
+    margin:10px;
+}
+
+.admin-avatar-out{
+    background: url(../resources/design/avatar-out.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height:126px;
+    margin-top:32px;
+    padding-top:20px;
+}
+
+.admin-avatar{
+   width: 84px;
+  height: 84px;
+  background-color: #414141;
+  margin:auto;
+  border-radius:50%;
+}
+
+.admin-img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+.admin-card-username{
+    height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8364ee;
+    margin-top:33px;
+}
+
+.admin-stat{
+  height: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #414141;
+}
+
+.admin-descript{
+   width: 150px;
+   margin:auto;
+   margin-top:16px;
+  height: 22px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #414141;
+}
+
+.admin-card-button{
+    width: 172px;
+    height: 38px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(131, 100, 238, 0.67);
+    background-color: #8364ee;
+    margin:auto;
+    margin-top:32px;
+    cursor:pointer;
+}
+
+.admin-card-text{
+    color:#fff;
+    line-height:38px;
+    font-size:14px;
+}
+
+/*CONTAINER*/
+.container{
+    text-align:center;
+}
+
+.section-yellow{
+    width:100%;
+    background: rgba(247,244,238,1);
+    padding:10px;
+    text-align:center;
+}
+
+.section-header{
+    color: #233745;
+    font-weight: 700;
+    font-size: 32px;
+}
+/*PARALLAX*/
+
+.parallax img{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.parallax-text{
+    display:table-cell;
+    vertical-align: middle;
+    width:100%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align:center;
+}
+
+.parallax-text-container{
+    width:50.666667%;
+    margin:auto;
+}
+
+.parallax-text-container h1{
+    font-weight:600;
+}
+
+.prl-border{
+    border-bottom:8px solid rgba(206,160,100,1);
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+    display:block;
+}
+
+/*MOBILE 320 - 860*/
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+    /*CONFESS FORM*/
+    .confess-form{
+        width:100%;
+        height:400px;
+    }
+
+    .confess-form h4{
+        font-size:20px;
+        font-weight:500;
+    }
+
+    .confess-form a{
+        font-size:15px;
+    }
+
+    .confess-form .confess-hastag .confess-hastag-input{
+        width:192px;
+    }
+
+    .confess-form button{
+        margin-top:8px;
+    }
+
+    .confess-form-success{
+        height:100px;
+        text-align:center;
+    }
+    
+    .confess-form-success h4{
+        line-height:28px;
+        margin-top:0;
+    }
+
+    /*CARD*/
+    .admin-profile{
+        overflow-x:scroll;
+    }
+
+    .admin-card{
+        padding:8px;
+        height:345px;
+    }
+
+    .admin-descript{
+        display:none;
+    }
+
+    .admin-card-button{
+       width:220px;
+    }
+    /*IFRAME*/
+    .iframe-ques{
+        width:100%;
+    }
+    /*TEXT*/
+    .section-header{
+        font-size:24px;
+    }
+    .header{
+        font-size: 20px;
+        font-weight:700;
+        color:rgba(133,114,81,1);
+    }
+    /*NAVBAR*/
+.nav-bar{
+    background-color:rgba(206,169,100,1);
+    width:100%;
+    height:56px;
+    padding-left:32px;
+    padding-right:32px;
+    padding-top:3px;
+    position:fixed;
+    z-index:9999;
+    color:#fff;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.nav-toggle{
+    background-color:rgb(255, 255, 255);
+    color:rgba(206,169,100,1);
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav-bar .nav-header{
+    line-height:1;
+    font-size:18px;
+    font-weight:500;
+    letter-spacing: 1.5px;
+    display:none;
+}
+
+.nav-bar .right-menu .search-box{
+    display:none;
+}
+
+    /*PARALLAX*/
+
+.parallax img{
+    height:100%;
+    background-position:center;
+    margin-left:-50%;
+}
+
+
+.parallax-text-container{
+    width:100%;
+    margin:auto;
+}
+
+.parallax-text-container h1{
+    font-size:40px;
+}
+
+}
+
+h1{
+    font-size:60px;
+    font-style:normal;
+    font-weight:500;
+    letter-spacing: -0.5px;
+    line-height:1.26;
+}
+
+html,body{
+    margin:0;
+    height: 100%;
+    font-family: 'SF Text' !important;
+}
