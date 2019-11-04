@@ -23,7 +23,7 @@
 }
 
 .bg-header{
-    background: url(../resources/image/bg-header.svg) no-repeat;
+    background: url('../resources/image/bg-header.svg') no-repeat;
     background-position: top left;
     height: 85%;
     top: -59px;
